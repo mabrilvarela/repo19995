@@ -1,11 +1,15 @@
-let numero = parseInt(prompt("Ingrese numero"));
+let numeroUsuario = parseInt(prompt("Ingrese numero a adivinar, de 0 a 20"));
 
-if (numero >= 10 &&  numero <= 50) {
+const numeroSecreto = 9;
 
-    alert("Tu numero es positivo");
+let intentos = 1;
 
-} else {
+while (numeroUsuario != numeroSecreto) {
 
-    alert("Tu numero es negativo");
+    numeroUsuario = parseInt(prompt("Intente de nuevo"));
 
-}
+    intentos++;
+
+} 
+
+alert ("Felicitaciones, descubriste el número secreto, tus intentos fueron: " + intentos);
