@@ -1,0 +1,26 @@
+[ 
+  {
+    "titulo": "Cornelia",
+    "autor": "Florencia Etcheves",      
+    "precio": 2000, 
+    "img": "cornelia.png"
+  },
+  {
+    "titulo": "La sirena",
+    "autor": "Florencia Etcheves",
+    "precio": 2500,
+    "img": "sirena.png"
+  },
+  {
+    "titulo": "Yo nena",
+    "autor": "Gabriela Mansilla",
+    "precio": 1800,
+    "img": "yo-nena.png"
+  },
+  {
+    "titulo": "Catedrales",
+    "autor": "Claudia Piñeiro",
+    "precio": 2300,
+    "img": "catedrales.png"
+  }
+]

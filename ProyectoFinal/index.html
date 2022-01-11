@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!-- Link Bootswatch -->
+        <link href="https://bootswatch.com/5/materia/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">        
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="estilos.css">
+        <title>Librería Oliver</title>
+    </head> 
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./img/icono.png" alt="icono-libro"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home
+                          <span class="visually-hidden">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                    </ul>
+                    <div>
+                        <button id="btnCarrito" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalCarrito"><i class="fas fa-shopping-cart"></i></i></button>  
+                    </div>                 
+                </div>
+            </nav>
+        </header> 
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalCarrito" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Has agregado:</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                    </div>
+                    <div class="row ml-ato">
+                        <p id="precioTotal" style="text-align: center; font-weight: bolder;"></p>
+                    </div>    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="vaciarCarrito">Vaciar carrito</button>
+                        <button type="button" class="btn btn-success">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 style="color: black; text-align: center; font-size: 50px;" class="my-2">LIBRERIA OLIVER</h1>     
+            
+        <div id="catalogo" class="row" style="justify-content: center; width: 100%;"></div>
+        
+
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>>
+        
+
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
+        
+        <!-- ARCHIVO JS -->
+        <script src="miarchivo.js"></script>
+    </body>
+    
+</html>
